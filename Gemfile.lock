@@ -151,10 +151,11 @@ GEM
     io-wait (0.2.1)
     irb (1.4.1)
       reline (>= 0.3.0)
-    jbuilder (2.11.5)
-      actionview (>= 5.0.0)
-      activesupport (>= 5.0.0)
     jsonapi-deserializable (0.2.0)
+    jsonapi-parser (0.1.1)
+    jsonapi-rails (0.4.0)
+      jsonapi-parser (~> 0.1.0)
+      jsonapi-rb (~> 0.5.0)
     jsonapi-rb (0.5.0)
       jsonapi-deserializable (~> 0.2.0)
       jsonapi-serializable (~> 0.3.0)
@@ -307,13 +308,11 @@ DEPENDENCIES
   debug
   handsome_fencer-test
   importmap-rails
-  jbuilder
-  jsonapi-rb
+  jsonapi-rails
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.2)
   selenium-webdriver
-  shoulda
   sprockets-rails
   stimulus-rails
   turbo-rails

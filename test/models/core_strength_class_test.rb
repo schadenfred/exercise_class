@@ -16,7 +16,10 @@ class CoreStrengthClassTest < ActiveSupport::TestCase
 
   test 'fixture_must_respond_to_students' do
     assert @csc_one.students
+  end
 
+  test 'csc_students_must_return_collection' do
+    # assert_equal @csc_one.students, []
   end
 
 
