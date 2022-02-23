@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :users
-  resources :core_strength_classes
+  resources :core_strength_classes do
+    resources :users
+  end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

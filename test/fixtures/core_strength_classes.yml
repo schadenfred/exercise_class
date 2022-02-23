@@ -6,7 +6,7 @@ one:
   end_date: 2022-02-23 15:54:49
   timezone: MyString
   description: MyString
-  facilitator_id: 1
+  facilitator: facilitator
 
 two:
   name: MyString
@@ -22,7 +22,8 @@ csc_100:
   end_date: 2022-02-23 15:54:49
   timezone: MyString
   description: MyString
-  facilitator_id: 1
+  facilitator: facilitator
+
 
 csc_101:
   name: MyString

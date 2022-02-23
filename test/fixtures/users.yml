@@ -5,7 +5,19 @@ one:
   last_name: MyString
   email: MyString
 
+
 two:
   first_name: MyString
   last_name: MyString
+  email: MyString
+
+
+three:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+
+facilitator:
+  first_name: Jane
+  last_name: teacher
   email: MyString

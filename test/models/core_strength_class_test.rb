@@ -23,6 +23,6 @@ class CoreStrengthClassTest < ActiveSupport::TestCase
   end
 
   test 'must_belong_to_facilitator' do
-    assert_equal @csc_one.facilitator, users(:one)
+    assert_equal @csc_one.facilitator, users(:facilitator)
   end
 end

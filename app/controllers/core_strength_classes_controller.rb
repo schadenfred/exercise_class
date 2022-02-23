@@ -37,6 +37,9 @@ class CoreStrengthClassesController < ApplicationController
   # PATCH/PUT /core_strength_classes/1 or /core_strength_classes/1.json
   def update
     respond_to do |format|
+      student_ids = core_strength_class_params[:student_ids]
+
+      @core_strength_class.core_strength_classes_students.create(student_id: student_ids.first)
       if @core_strength_class.update(core_strength_class_params)
         format.html { redirect_to core_strength_class_url(@core_strength_class), notice: "Core strength class was successfully updated." }
         format.json { render :show, status: :ok, location: @core_strength_class }
@@ -65,6 +68,7 @@ class CoreStrengthClassesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def core_strength_class_params
-      params.require(:core_strength_class).permit(:name, :start_date, :end_date, :timezone, :description, :facilitator_id)
+      params.require(:core_strength_class)
+            .permit(:name, :start_date, :end_date, :timezone, :description, :facilitator_id, student_ids: [] )
     end
 end
