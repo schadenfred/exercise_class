@@ -2,13 +2,22 @@ require "test_helper"
 
 class CoreStrengthClassTest < ActiveSupport::TestCase
 
-  describe 'CoreStrengthClass' do
-    Given(:cs_class) { core_strength_classes(:one) }
+  setup do
+    @csc_one = core_strength_classes(:csc_100)
+  end
 
-    Then { assert_equal cs_class.name, 'blah' }
-    # Then { assert_equal core_strength_classes(:two).name, 'blah'}
+  test 'fixtures_must_have_correct_count' do
+    assert_equal 4, CoreStrengthClass.count
+  end
 
+  test 'fixture_must_have_name' do
+    assert_equal @csc_one.name, 'Core Strength Class 100'
+  end
+
+  test 'fixture_must_respond_to_students' do
+    assert @csc_one.students
 
   end
+
 
 end
