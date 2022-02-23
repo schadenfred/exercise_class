@@ -19,8 +19,10 @@ class CoreStrengthClassTest < ActiveSupport::TestCase
   end
 
   test 'csc_students_must_return_collection' do
-    # assert_equal @csc_one.students, []
+    assert_equal @csc_one.students, []
   end
 
-
+  test 'must_belong_to_facilitator' do
+    assert_equal @csc_one.facilitator, users(:one)
+  end
 end

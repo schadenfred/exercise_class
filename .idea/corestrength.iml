@@ -15,4 +15,9 @@
     <orderEntry type="library" scope="PROVIDED" name="rbs (v1.4.0, RVM: ruby-3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.5, RVM: ruby-3.0.3) [gem]" level="application" />
   </component>
+  <component name="RakeTasksCache">
+    <option name="myRootTask">
+      <RakeTaskImpl id="rake" />
+    </option>
+  </component>
 </module>
