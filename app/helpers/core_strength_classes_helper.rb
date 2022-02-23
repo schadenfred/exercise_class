@@ -1,0 +1,2 @@
+module CoreStrengthClassesHelper
+end

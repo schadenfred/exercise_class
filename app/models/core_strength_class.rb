@@ -1,0 +1,2 @@
+class CoreStrengthClass < ApplicationRecord
+end

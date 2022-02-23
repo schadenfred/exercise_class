@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @core_strength_class %>
+
+<div>
+  <%= link_to "Edit this core strength class", edit_core_strength_class_path(@core_strength_class) %> |
+  <%= link_to "Back to core strength classes", core_strength_classes_path %>
+
+  <%= button_to "Destroy this core strength class", @core_strength_class, method: :delete %>
+</div>

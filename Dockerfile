@@ -17,10 +17,10 @@ WORKDIR /app
 
 RUN gem install bundler:2.2.28
 
-COPY Gemfile Gemfile.lock ./
+COPY Gemfile Gemfile.lock /app/
 RUN bundle install -j4 --retry 3
 
-COPY . .
+COPY . /app/
 
 RUN chmod -R 755 entrypoints/docker-entrypoint.sh
 

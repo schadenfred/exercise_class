@@ -1,0 +1,47 @@
+<%= form_with(model: core_strength_class) do |form| %>
+  <% if core_strength_class.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(core_strength_class.errors.count, "error") %> prohibited this core_strength_class from being saved:</h2>
+
+      <ul>
+        <% core_strength_class.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :start_date, style: "display: block" %>
+    <%= form.datetime_field :start_date %>
+  </div>
+
+  <div>
+    <%= form.label :end_date, style: "display: block" %>
+    <%= form.datetime_field :end_date %>
+  </div>
+
+  <div>
+    <%= form.label :timezone, style: "display: block" %>
+    <%= form.text_field :timezone %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :facilitator_id, style: "display: block" %>
+    <%= form.text_field :facilitator_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

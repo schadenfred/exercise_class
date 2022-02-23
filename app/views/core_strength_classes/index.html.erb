@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Core strength classes</h1>
+
+<div id="core_strength_classes">
+  <% @core_strength_classes.each do |core_strength_class| %>
+    <%= render core_strength_class %>
+    <p>
+      <%= link_to "Show this core strength class", core_strength_class %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New core strength class", new_core_strength_class_path %>
